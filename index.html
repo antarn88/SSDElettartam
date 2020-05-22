@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSD élettartam számítás 1.0</title>
+    <link rel="icon" href="img/main-icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div id="title">
+            <p>SSD élettartam kiszámítása</p>
+        </div>
+        <div id="form">
+            <div class="labels-container">
+                <label for="daily-average-writing">Napi átlagos írás (GB):</label><br>
+                <label for="tbw">A gyártó által megadott írhatóság (TBW):</label>
+                <label for="multiplication">A gyári érték hányszorosát vegyük:</label>
+            </div>
+            <div class="inputs-container">
+                <input type="text" id="daily-average-writing" autofocus maxlength="5">
+                <input type="text" id="tbw" maxlength="4">
+                <input type="text" id="multiplication" maxlength="4">
+            </div>
+            <div class="buttons-container">
+                <input type="button" id="calculate-button" value="Számítás">
+            </div>
+        </div>
+        <hr id="hr">
+        <div id="result">
+            <p>Várható élettartam: <span id="result-years"></span> év</p>
+        </div>
+        <div id="popup-window">
+            <div id="popup-window-top"></div>
+            <div id="popup-window-message"></div>
+            <div id="popup-window-bottom">
+                <input type="button" id="ok-button" value="OK">
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

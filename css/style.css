@@ -1,0 +1,218 @@
+body {
+    background-color: antiquewhite;
+    user-select: none;
+}
+
+.content {
+    width: 405px;
+    height: 440px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #0063B1;
+    color: white;
+    box-shadow: 3px 5px 8px #888888;
+    border-radius: 8px;
+}
+
+#title {
+    height: 63px;
+    padding-top: 37px;
+    font-size: 28px;
+}
+
+#title p {
+    display: inline;
+}
+
+#form {
+    width: 100%;
+    height: 210px;
+    padding-top: 25px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 15px; 
+}
+
+.labels-container {
+    width: 68%;
+    float: left;
+    margin-left: 5%;
+}
+
+.inputs-container {
+    width: 18%;
+    float: right;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    clear: both;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+label {
+    text-align: left;
+}
+
+input[type=text] {
+    width: 50%;
+    height: 20px;
+    font-size: 13px;
+    text-align: center;
+    background-color: rgb(229, 233, 236);
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;    
+}
+
+input[type=text]:focus {
+    background-color: white;
+    border: 1px solid rgb(77, 144, 254);
+}
+
+input[type=text]:hover, input[type=text]:active {
+    border: 1px solid rgb(77, 144, 254);
+}
+
+input[type=text]:disabled, #calculate-button:disabled {
+    pointer-events: none;
+}
+
+#calculate-button {
+    background-color: #0063B1;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+#calculate-button:hover {
+    background-color: white;
+    color: #0063B1;
+}
+
+#calculate-button:focus {
+    outline: none;
+}
+
+hr {
+    width: 90%;
+}
+
+#result {
+    visibility: hidden;
+    height: 70px;
+}
+
+#result p {
+    padding-top: 6px;
+    font-size: 25px;
+}
+
+#popup-window {
+    visibility: hidden;
+    position: fixed;
+    width: 230px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.popup-window-warning {
+    background-color: #FFDC00;
+}
+
+.popup-window-error {
+    background-color: #FF4136;
+}
+
+#popup-window-top {
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    background-color: white;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.popup-window-top-warning {
+    color: black;
+}
+
+.popup-window-top-error {
+    color: #FF4136;
+}
+
+#popup-window-message {
+    height: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.popup-window-message-warning {
+    color: black;
+}
+
+.popup-window-message-error {
+    color: white;
+}
+
+#popup-window-bottom {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ok-button {
+    outline: none;
+    width: 70px;
+    height: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.ok-button-warning {
+    background-color: inherit;
+    color: black;
+    border: 1px solid black;
+}
+
+.ok-button-warning:hover {
+    background-color: white;
+}
+
+.ok-button-error {
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+}
+
+.ok-button-error:hover {
+    background-color: white;
+    color: #FF4136;
+}

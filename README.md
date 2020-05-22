@@ -1,0 +1,2 @@
+# SSDElettartam
+SSD élettartam kiszámítása
