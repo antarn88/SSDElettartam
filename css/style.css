@@ -12,7 +12,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     font-family: sans-serif;
-    background-color: #0063B1;
+    background-color: #0063b1;
     color: white;
     box-shadow: 3px 5px 8px #888888;
     border-radius: 8px;
@@ -34,7 +34,7 @@ body {
     padding-top: 25px;
     line-height: 50px;
     text-align: left;
-    font-size: 15px; 
+    font-size: 15px;
 }
 
 .labels-container {
